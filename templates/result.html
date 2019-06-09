@@ -1,21 +1,24 @@
 <!doctype html>
 <title>Earnings Surprise Forecast</title>
-<link rel=stylesheet type=text/css >
+<link rel=stylesheet type=text/css href='./static/new_style.css'>
 <div class=page>
   <h1>Forecast Result</h1>
 
-  <div class=metanav>
-
 <h4>
-<form id='userinput' method='post' action='forecast' > <!-- action must match your next URL -->
    <p>
-   Actual Surprise: {{label1}}   Forecast Surprise: {{label2}}
+   Actual Surprise: {{actual}}
    </p>
    <p>
-   Weblink:
+   Forecast Surprise: {{forecast}}
    </p>
-</form>
+   <p>
+   News Headlines: 
+   </p>
 </h4>
+<pre>{{headlines}}</pre>
 
-</div>
+<form id='userinput' method='get' action='' > <!-- action must match your next URL -->
+   <input type='submit' value='Try Another One!' />
+</form>
+
 </div>
