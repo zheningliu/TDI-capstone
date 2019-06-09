@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
 from datetime import datetime
-import calendar
-from dateutil.relativedelta import relativedelta
 from flask import Flask,render_template,request
 
 app = Flask(__name__)
